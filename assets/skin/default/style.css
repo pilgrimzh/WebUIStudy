@@ -1,0 +1,33 @@
+﻿body,p,div,a,td,li,tr{ font-size:12px; 
+                       background-color:white;
+                       padding:0px;
+                       margin:0px auto; 
+                       font-family:'黑体 Arial';}
+
+.datatable 
+{
+ background-color:#a53ade;
+}
+.datatable td{ padding:3px;}
+.head td
+{
+	font-weight:bold;
+	background-color: #d29eef;
+}
+.even td
+{
+  background-color:#cef4fb;	
+}
+.odd td
+{
+	background-color:#e4ecb9;
+}
+.selected td
+{
+ background-color:#96c5c5;
+ font-weight:bold;	
+}
+.over td
+{
+	background-color:#addde9;
+}

@@ -1,0 +1,35 @@
+﻿body,p,div,a,td,li,tr{ font-size:12px; 
+                       background-color:white;
+                       padding:0px;
+                       margin:0px auto; 
+                     }
+
+.datatable 
+{
+	background-color:#7bc4ef;
+}
+.datatable td{ padding:3px;}
+.head td
+{
+	font-weight:bold;
+	background-color: #7bc4ef;
+	color:#2c3d5b;
+}
+.even td
+{
+  background-color:#badcef;	
+}
+.odd td
+{
+	background-color:#ffffff;
+}
+.selected td
+{
+ background-color:#7ebbdd;
+ font-weight:bold;	
+ color:#d76a3f;
+}
+.over td
+{
+	background-color:#72c7f1;
+}

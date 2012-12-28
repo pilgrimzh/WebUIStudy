@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title>  </title>
+  <meta http-equiv="content-type"content="text/html; charset=gb2312"/>
+  <script src="../assets/seajs/1.3.1/sea.js" data-main='../assets/cfg'  type="text/javascript"></script>
+  <script type="text/javascript">
+      var i = 0;
+  
+  seajs.use(['na/grid', 'na/test', 'gallery/cookie/1.3.0/cookie'], function (grid, test,cookie) {
+      grid.config();
+      test.show("woshi 真的郁闷了。。。。。");
+      test.alert("加载完毕...");
+
+     $.cookie("add", ++i);
+     alert($.cookie('add'));
+ });
+
+ function s() {
+      $.cookie("add", ++i);
+     alert($.cookie('add'));
+ };
+
+
+
+ seajs.use('gallery/jsuri/1.2.2/jsuri', function (uri) {
+     alert(window.location.href);
+     var uri = new uri(window.location.href);
+     alert(uri.host());
+ });
+  </script>
+ </head>
+ <body>
+	<div></div>
+	<p><h1><h1></p>
+	 
+	 <input type="text" id="keys" value=""  style="width:500px;"/>
+     <input type="button" onclick='s();' name="name" value="点我" />
+	 <table border="0" class="datatable"  id="tableid" width="99%" cellpadding="0" cellspacing="1">
+		 <tr class="head">
+			 <td >
+				 <input type="checkbox" id="selectAll"  value="全选" />
+			 </td>
+			 <td>
+				 编号 
+			 </td>
+			 <td>
+				   姓名
+			 </td>
+		 </tr>
+		 <tr>
+			 <td>
+				 <input type="checkbox" name="selectOne"  value="" />
+			 </td>
+			 <td>
+				 1
+			 </td>
+			 <td>
+				  小赵
+			 </td>
+		 </tr>
+		   <tr>
+			 <td>
+				 <input type="checkbox" name="selectOne"  value="" />
+			 </td>
+			 <td>
+				 10
+			 </td>
+			 <td>
+				  小赵10
+			 </td>
+		 </tr>
+		   <tr>
+			 <td>
+				 <input type="checkbox" name="selectOne"  value="" />
+			 </td>
+			 <td>
+				 11
+			 </td>
+			 <td>
+				  小赵11
+			 </td>
+		 </tr>
+		   <tr>
+			 <td>
+				 <input type="checkbox" name="selectOne"  value="" />
+			 </td>
+			 <td>
+				 2
+			 </td>
+			 <td>
+				  张数
+			 </td>
+		 </tr>  <tr>
+			 <td>
+				 <input type="checkbox" name="selectOne"  value="" />
+			 </td>
+			 <td>
+				 3
+			 </td>
+			 <td>
+				  许毛毛
+			 </td>
+		 </tr>  <tr>
+			 <td>
+				 <input type="checkbox" name="selectOne"  value="" />
+			 </td>
+			 <td>
+				 4
+			 </td>
+			 <td>
+				  潘讨回
+			 </td>
+		 </tr>
+	 </table>
+
+ </body>
+</html>
